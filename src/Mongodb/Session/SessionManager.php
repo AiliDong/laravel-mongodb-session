@@ -1,6 +1,7 @@
-<?php namespace Jenssegers\Mongodb\Session;
+<?php 
 
-use Symfony\Component\HttpFoundation\Session\Storage\Handler\MongoDbSessionHandler;
+namespace AiliDong\Mongodb\Session;
+use AiliDong\Session\Storage\Handler\MongoHandler;
 
 class SessionManager extends \Illuminate\Support\Manager {
 
@@ -17,7 +18,7 @@ class SessionManager extends \Illuminate\Support\Manager {
 
         $database = (string) $connection->getMongoDB();
 
-        return new MongoDbSessionHandler($connection->getMongoClient(), $this->getMongoDBOptions($database, $collection));
+        return new MongoHandler($connection->getMongoClient(), $this->getMongoDBOptions($database, $collection));
     }
 
     /**

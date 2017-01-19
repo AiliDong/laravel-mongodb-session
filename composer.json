@@ -1,22 +1,27 @@
 {
-    "name": "jenssegers/mongodb-session",
-    "description": "A MongoDB session driver for Laravel 4",
+    "name": "ailidong/laravel-mongodb-session",
+    "description": "A MongoDB session driver for Laravel 5.3",
     "keywords": ["laravel","session","mongodb","mongo","driver"],
     "authors": [
-        {
-            "name": "Jens Segers",
-            "homepage": "http://jenssegers.be"
-        }
+            {
+              "name": "Aili Dong",
+              "email": "",
+              "role": "Developer"
+            },
+            {
+              "name": "Jens Segers",
+              "homepage": "http://jenssegers.be"
+            }
     ],
     "license" : "MIT",
     "require": {
-        "php": ">=5.3.0",
+        "php": ">=7.0.0",
         "jenssegers/mongodb": "*",
-        "illuminate/session": "~4.0|~5.0"
+        "illuminate/session": "~5.2"
     },
     "autoload": {
         "psr-0": {
-            "Jenssegers\\Mongodb\\Session": "src/"
+          "AiliDong\\Mongodb\\Session": "src/"
         }
     }
 }

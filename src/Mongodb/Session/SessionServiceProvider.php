@@ -1,4 +1,6 @@
-<?php namespace Jenssegers\Mongodb\Session;
+<?php 
+
+namespace AiliDong\Mongodb\Session;
 
 use Illuminate\Support\ServiceProvider;
 
